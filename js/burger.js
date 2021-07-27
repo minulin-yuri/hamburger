@@ -100,7 +100,8 @@ class Burger {
     getOrderTitle() {
         let str = 'Ваш заказ:\n';
         str += `${this.size.russianTitle} бургер, начинка - ${this.staffing.russianTitle}`;
-        if (this.addition) {
+        console.log(this.addition);
+        if (this.addition.length > 0) {
             str += ', дополнения:';
             if (this.addition.length == 1) {
                 str += ` ${this.addition[0].russianTitle}\n`;
@@ -110,6 +111,8 @@ class Burger {
                 }
                 str += ` ${this.addition[(this.addition.length - 1)].russianTitle}\n`;
             }
+        } else {
+            str += '\n';
         }
         return str;
     }
