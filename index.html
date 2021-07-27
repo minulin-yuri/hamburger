@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="./js/variables.js"></script>
+    <script defer src="./js/burger.js"></script>
+    <script defer src="./js/main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Расчет цены и калорийности гамбургеров</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <fieldset class="size select-block">
+                    <legend>Выберите размер гамбургера:</legend>
+                    <div class="little select-item">
+                        <input type="radio" id="little" name="size" value="little" checked>
+                        <label for="little">Маленький</label>
+                    </div>
+                    <div class="big select-item">
+                        <input type="radio" id="big" name="size" value="big">
+                        <label for="big">Большой</label>
+                    </div>
+                </fieldset>
+                <fieldset class="staffing select-block">
+                    <legend>Выберите начинку:</legend>
+                    <div class="cheese select-item">
+                        <input type="radio" id="cheese" name="staffing" value="cheese" checked>
+                        <label for="cheese">Сыр</label>
+                    </div>
+                    <div class="salad select-item">
+                        <input type="radio" id="salad" name="staffing" value="salad">
+                        <label for="salad">Салат</label>
+                    </div>
+                    <div class="potato select-item">
+                        <input type="radio" id="potato" name="staffing" value="potato">
+                        <label for="potato">Картофель</label>
+                    </div>
+                </fieldset>
+                <fieldset class="addition select-block">
+                    <legend>Выберите дополнение:</legend>
+                    <div class="seasoning select-item">
+                        <input type="checkbox" id="seasoning" name="addition">
+                        <label for="seasoning">Посыпать приправой</label>
+                    </div>
+                    <div class="maionese select-item">
+                        <input type="checkbox" id="maionese" name="addition">
+                        <label for="maionese">Полить майонезом</label>
+                    </div>
+                </fieldset>
+                <button>Рассчитать</button>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
